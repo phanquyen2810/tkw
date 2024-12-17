@@ -1,25 +1,178 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website UEL Style</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css  ">
 </head>
 
 <body>
-    <div class="contener"></div>
-    <div class="row">
-        <div class="col">
-            <div class="box">
-                here
+    <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      
+            <a class="navbar-brand" href="https://uel.edu.vn/"><div class="logo-left"><img src="pictures/logo.png" alt="" width="50"
+                height="50" ></div></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">TRANG CHỦ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">GIỚI THIỆU</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ĐÀO TẠO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">NGHIÊN CỨU</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">MÔI TRƯỜNG HỌC</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-warning text-dark px-3" href="#">TUYỂN SINH</a></li>
+                </ul>
+            </div>
+        
+    </nav>
+</div>
+    <!-- Hero Section -->
+    <div class="container">
+        <div class="hero-section">
+            <h1 class="hero-title"></h1>
+        </div>
+    </div>
+
+
+
+    <!-- Content Section -->
+    <div class="container my-4">
+        <div class="row">
+            <!-- First Card -->
+            <div class="col-md-3 mb-3">
+                <div class="card bg-success text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">SINH VIÊN TƯƠNG LAI</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Card -->
+            <div class="col-md-3 mb-3">
+                <div class="card bg-orange text-white" style="background-color: orange;">
+                    <div class="card-body">
+                        <h5 class="card-title">SINH VIÊN</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Card -->
+            <div class="col-md-3 mb-3">
+                <div class="card bg-danger text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">CỰU SINH VIÊN</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Fourth Card -->
+            <div class="col-md-3 mb-3">
+                <div class="card bg-primary text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">CÁN BỘ, VIÊN CHỨC</h5>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <!-- Hình ảnh -->
+
+    <!-- Content Section -->
+    <div class="container my-4">
+        <div class="row">
+            <!-- Phần hình ảnh -->
+            <div class="col-md-9">
+                <div id="imageCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                    <!-- Chỉ số hình ảnh -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <!-- Hình ảnh -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="pictures/img1.jpg" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pictures/img2.jpg" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pictures/img3.jpg" class="d-block w-100" alt="Slide 3">
+                        </div>
+                    </div>
+                    <!-- Nút điều hướng -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Phần tin tức -->
+            <div class="col-md-3">
+                <h3>TIN TỨC</h3>
+                <hr>
+                <ul>
+                    <li><a
+                            href="https://uel.edu.vn/tin-tuc/ncs-le-ngoc-quynh-anh-bao-ve-thanh-cong-luan-an-tien-si-nganh-tai-chinh-ngan-hang">NCS
+                            Lê Ngọc Quỳnh Anh bảo vệ thành công luận án tiến sĩ ngành Tài chính – Ngân hàng</a>
+                        <hr>
+                    </li>
+                    <br>
+                    <li><a href="https://uel.edu.vn/tin-tuc/can-khung-phap-ly-chuyen-doi-nen-kinh-te-xanh">Cần “Khung
+                            pháp lý chuyển đổi nền kinh tế xanh”</a>
+                        <hr>
+                    </li>
+                    <br>
+                    <li><a
+                            href="https://uel.edu.vn/tin-tuc/uel-mo-chuong-trinh-dao-tao-tu-xa-va-3-chuyen-nganh-moi-tu-nam-2025">UEL
+                            mở chương trình đào tạo từ xa và 3 chuyên ngành mới từ năm 2025</a>
+                        <hr>
+                    </li>
+                </ul>
             </div>
         </div>
+    </div>
+
+    <!--footer-->
+    <div class="container">
+        <footer class="footer text-white py-3" style="background-color: #004080;">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="content-footer">
+                    <p class="mb-0">Bản quyền © 2010 thuộc Trường Đại học Kinh tế - Luật, Đại học Quốc gia TP.HCM.</p>
+                    <p class="mb-0">Số 669 Quốc lộ 1, Khu phố 6, Phường Linh Xuân, Thủ Đức, TP. Hồ Chí Minh.</p>
+                    <a href="#" class="text-white">Sơ đồ dẫn đường</a> | <a href="#" class="text-white">Liên hệ</a>
+                </div>
+                <div>
+                    <!-- Phần này có thể chứa thêm nội dung nếu cần -->
+                </div>
+                <div class="logo-right">
+                    <img src="pictures/logo.png" alt="logo" width="50" height="50">
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 </body>
 
